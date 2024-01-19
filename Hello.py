@@ -3,10 +3,11 @@ import random
 
 l = ['TriageAtDawn', 'SilverDragon', 'SOMA', 'LDawly', '3m 3ly']
 
-text = st.text_input('Enter your name')
+text = st.text_input('Enter your name or just press on the button')
 if ((text or text != '')):
   if (text.lower() not in map(str.lower, l)):
     st.write("name entered successfully")
+    l.append(text)
   else:
     st.write("name found before")
 
