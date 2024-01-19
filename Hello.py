@@ -4,7 +4,7 @@ import random
 l = ['TriageAtDawn', 'SilverDragon', 'SOMA', 'LDawly', '3m 3ly']
 
 text = st.text_input('Enter your name')
-if (text or text != ''):
+if ((text or text != '') and text not in l):
   l.append(text)
 
 if st.button("I feel lucky", type="primary"):
